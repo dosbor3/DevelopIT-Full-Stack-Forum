@@ -1,12 +1,7 @@
-# Project Name
-- DevelopIT
-- Full Stack Forum
+# DevelopIT Full Stack Forum
 
 ## Project Summary
-- The application provides Full Stack Developers and prospective Full Stack Developers the opportunity to join a forum that is related to their specific lesson and subtopic 
-- based on selection.  For example, a prospective student is learning to model data using the Sequelize ORM.  The student will be able to enter a forum that is focused on
-- data modeling using the Sequelize ORM.  This eliminates the time lost sifting through search engine results.  
-
+The application provides Full Stack Developers and prospective Full Stack Developers the opportunity to join a forum that is related to their specific lesson and subtopic based on selection.  For example, a prospective student is learning to model data using the Sequelize ORM.  The student will be able to enter a forum that is focused on data modeling using the Sequelize ORM.  This eliminates the time lost sifting through search engine results.  
 
 ## Developers
 
