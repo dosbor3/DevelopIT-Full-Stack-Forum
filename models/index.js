@@ -33,6 +33,18 @@ User.hasMany(Post, {
     as: 'voted_posts',
     foreignKey: 'post_id'
   });
+
+ Topic.belongsToMany(Subtopic, {
+    through: Tag,
+    as: 'tag',
+    foreignKey: 'topic_id'
+  });
+  
+  Subtopic.belongsToMany(Topic, {
+    through: Tag,
+    as: 'tag',
+    foreignKey: 'subtopic_id'
+  });
   
   Vote.belongsTo(User, {
     foreignKey: 'user_id'
@@ -61,5 +73,13 @@ User.hasMany(Post, {
     foreignKey: 'topic_id'
   });
 
+  Tag.belongsTo(Topic, {
+    foreignKey: 'user_id'
+  });
+  
+  Tag.belongsTo(Subtopic, {
+    foreignKey: 'post_id'
+  });
 
-  module.exports = { User, Topic, Subtopic, Post, Vote };
+
+  module.exports = { User, Topic, Subtopic, Post, Vote, Tag };
