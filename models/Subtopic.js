@@ -43,7 +43,7 @@ Subtopic.init (
       type: DataTypes.STRING,
       allowNull: false
     },
-    topic: {
+    topic_id: {
       type: DataTypes.INTEGER,
       allowNull: false, 
       references: {

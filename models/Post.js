@@ -57,13 +57,15 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: true
     },
-    topic: {
+    topic_id: {
+      type: DataTypes.INTEGER,
       reference: {
         model: 'topic',
         key: 'id'
       }
     },
-    subtopic: {
+    subtopic_id: {
+      type: DataTypes.INTEGER,
       reference: {
         model: 'subtopic',
         key: 'id'
