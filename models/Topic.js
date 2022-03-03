@@ -15,14 +15,6 @@ Topic.init (
             type: DataTypes.STRING,
             allowNull: false
         },       
-        subtopic: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            references: {
-                model: 'subtopic',
-                key: 'id'
-            }
-        }
     },
     {
         sequelize,
