@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'panama';
+    src: url("./fonts/panama-bold-webfont.woff2") format("woff2"), url("./fonts/panama-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    padding-top: 80px;
+    background: #727171;
+    color: rgb(241, 233, 233) !important;
+    font-size: 13px;
+    font-family: 'panama';
+  }
+  
+  .navbar-dark {
+    background: linear-gradient(90deg,#688ccf,#2997f1);
+    }
+  
+    .navbar-brand {
+      color: rgb(245, 239, 239) !important;
+      font-family: 'panama';
+      letter-spacing: -1px;
+      word-spacing: 0px;
+      font-weight: 600;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+      text-decoration: none;
+      text-indent: 0px;
+    }
+  
+    .navbar {
+      margin-bottom: 0;
+    }
+    .nav-link  {
+      color: rgb(255, 255, 255) !important;
+      font-family: 'panama';
+    }
+    .headTitle {
+      color: #2997f1 !important;
+      font-family: 'panama';
+      font-size: 18px;
+    }
+  
+  .form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  
+  .form-signin .form-signin-heading,
+  .form-signin .checkbox {
+    margin-bottom: 10px;
+  }
+  
+  .form-signin .checkbox {
+    font-weight: normal;
+  }
+  
+  .form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 13px;
+  }
+  
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  
+  
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  .btn-app {
+    background-color: #688ccf;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .post-card-title {
+    color: rgb(248, 241, 241) !important;
+  }
+  
+  .btn-pagination {
+    font-size: 12px;
+  }
+  
+  .dropdown-item {
+    font-size: 13px;
+  }
+  
+  .comment-card {
+    margin: 5px;
+  }
+  
+  .comment-span {
+    font-size: 9px;
+  }
+  
+  .edit-link-btn {
+    color: #fff;
+    font-size: 13px;
+  }
+  
+  .author-span {
+    color: #2997f1;
+  }
