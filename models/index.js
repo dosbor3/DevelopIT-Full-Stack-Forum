@@ -1,25 +1,17 @@
 const User = require('./User');
-const Topic = require('./Topic');
-const Subtopic = require('./Subtopic');
 const Post = require('./Post');
 const Vote = require('./Vote');
-const Tag = require('./Tag');
+const Comment = require('./Comment');
+const Topic = require('./Topic');
+const Subtopic = require('./Subtopic');
 
-//associations
+// create associations
 User.hasMany(Post, {
     foreignKey: 'user_id'
   });
-
+  
   Post.belongsTo(User, {
     foreignKey: 'user_id'
-  });
-
-  Topic.hasMany(Subtopic, {
-      foreignKey: 'topic_id'
-  });
-  
-  Subtopic.belongsTo(Topic, {
-    foreignKey: 'topic_id'
   });
   
   User.belongsToMany(Post, {
@@ -32,18 +24,6 @@ User.hasMany(Post, {
     through: Vote,
     as: 'voted_posts',
     foreignKey: 'post_id'
-  });
-
- Topic.belongsToMany(Subtopic, {
-    through: Tag,
-    as: 'tag',
-    foreignKey: 'topic_id'
-  });
-  
-  Subtopic.belongsToMany(Topic, {
-    through: Tag,
-    as: 'tag',
-    foreignKey: 'subtopic_id'
   });
   
   Vote.belongsTo(User, {
@@ -58,28 +38,25 @@ User.hasMany(Post, {
     foreignKey: 'user_id'
   });
   
-  Post.belongsTo(Topic, {
-      foreignKey: 'topic_id'
-  });
-
-  Post.belongsTo(Subtopic, {
-      foreignKey: 'subtopic_id'
-  });
   Post.hasMany(Vote, {
     foreignKey: 'post_id'
   });
-
-  Subtopic.belongsTo(Topic, {
-    foreignKey: 'topic_id'
-  });
-
-  Tag.belongsTo(Topic, {
+  
+  Comment.belongsTo(User, {
     foreignKey: 'user_id'
   });
   
-  Tag.belongsTo(Subtopic, {
+  Comment.belongsTo(Post, {
     foreignKey: 'post_id'
   });
-
-
-  module.exports = { User, Topic, Subtopic, Post, Vote, Tag };
+  
+  User.hasMany(Comment, {
+    foreignKey: 'user_id'
+  });
+  
+  Post.hasMany(Comment, {
+    foreignKey: 'post_id'
+  });
+  
+  module.exports = { User, Post, Vote, Comment };
+  

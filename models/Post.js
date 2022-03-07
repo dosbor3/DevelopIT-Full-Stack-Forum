@@ -49,27 +49,6 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-    question: {
-      type: DataTypes.STRING,  
-      allowNull: true    
-    },
-    answer: {
-      type: DataTypes.STRING,
-      allowNull: true
-    },
-    topic_id: {
-      type: DataTypes.INTEGER,
-      reference: {
-        model: 'topic',
-        key: 'id'
-      }
-    },
-    subtopic_id: {
-      type: DataTypes.INTEGER,
-      reference: {
-        model: 'subtopic',
-        key: 'id'
-      },
     post_url: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -84,7 +63,8 @@ Post.init(
         key: 'id'
       }
     }
-  },  
+  },
+  {
     sequelize,
     freezeTableName: true,
     underscored: true,
