@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     box-sizing: border-box;
   }
@@ -176,3 +177,136 @@
     padding: 1%;
     font-size: 110%;
   }
+=======
+body {
+  background-color: lightblue;
+}
+
+
+#navBar{
+  margin-left: 5%;
+}
+
+#loginMsgs{
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+max-width: 400px;
+margin-left: 32%;
+}
+
+#registerMsgs{
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+max-width: 400px;
+margin-left: 32%;
+}
+
+.navLinks{
+text-decoration: underline;
+text-transform: uppercase;
+font-weight: bold;
+color: rgb(216, 224, 228) !important;
+background-color: rgb(126, 124, 124);
+}
+
+#loginForm{
+margin-left: 32%;
+}
+
+#registerForm{
+max-width: 400px;
+margin-left: 32%;
+}
+
+#welcome{
+color: rgb(230, 237, 240);
+}
+
+body {
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.header,
+.marketing,
+.footer {
+padding-right: 5px;
+padding-left: 5px;
+margin-left: 10%;
+margin-right: 10%;
+}
+.header {
+padding-bottom: 10px;
+border-bottom: 1px solid #e5e5e5;
+}
+.header h3 {
+margin-top: 0;
+margin-bottom: 0;
+line-height: 40px;
+}
+
+.footer {
+padding-top: 19px;
+color: #777;
+border-top: 1px solid #e5e5e5;
+}
+
+@media (min-width: 768px) {
+.container {
+  max-width: 1300px;
+}
+}
+.container-narrow > hr {
+margin: 30px 0;
+}
+
+.jumbotron {
+text-align: center;
+border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+padding: 14px 24px;
+font-size: 21px;
+}
+
+.marketing {
+margin: 40px 0;
+}
+.marketing p + h4 {
+margin-top: 28px;
+}
+
+@media screen and (min-width: 768px) {
+.header,
+.marketing,
+.footer {
+  padding-right: 0;
+  padding-left: 0;
+}
+.header {
+  margin-bottom: 10px;
+}
+.jumbotron {
+  border-bottom: 0;
+}
+}
+
+.page-header{
+margin-top:0;
+}
+
+footer{
+margin-top:40px;
+}
+#footer2{
+position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+color: white !important;
+font-weight: bold;
+background:rgb(32, 96, 180) !important;
+}
+>>>>>>> 8261ae5ec403e0ca2c971ccf564b1e17d5a66fac
