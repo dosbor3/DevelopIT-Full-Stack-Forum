@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node seeds/index.js && node server.js",
+    "start": "node server.js",
     "test": "jest --colors"
   },
   "repository": {
