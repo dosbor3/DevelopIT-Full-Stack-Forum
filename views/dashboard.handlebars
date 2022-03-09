@@ -1,0 +1,32 @@
+<section>
+  <h2>Ask New Question</h2>
+
+  <form class="new-post-form">
+    <div>
+      <label for="post-title">Topic</label>
+      <input type="text" id="post-title" name="post-title" />
+    </div>
+    <div>
+      <label for="post-url">Question</label>
+      <input id="post-url" name="post-url" />
+    </div>
+    <button type="submit" class="btn">Ask</button>
+  </form>
+</section>
+
+{{#if posts.length}}
+<section>
+  <h2>Previous Questions:</h2>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      {{> post-info post}}
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+<script src="/javascript/add-post.js"></script>
+
