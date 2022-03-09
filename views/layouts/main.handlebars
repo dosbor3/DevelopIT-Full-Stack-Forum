@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevelopIT</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <div class="wrapper">   
+    <header class="header">
+      <h1>
+        <a href="/">Home</a>
+      </h1>
+      <h1>
+        {{#if loggedIn}}
+        <a href="/dashboard">Dashboard</a>
+      </h1>      
+      <nav>        
+        <button id="logout" class="btn-no-style">Logout</button>
+        {{else}}        
+        <a href="/login">Login</a>
+        {{/if}}
+    </nav>       
+    </header>
+    <div class="hero"> <h2 class="hero">DevelopIT <span>Full Stack Developer Forum</h2></div>  
+    <main>
+      {{{ body }}}
+    </main>
+    <footer>
+      Thanks for visiting!
+    </footer>
+  </div>
+   {{#if loggedIn}}
+      <script src="/javascript/logout.js"></script>
+   {{/if}}
+
+</body>
+
+</html>
