@@ -3,7 +3,6 @@ async function logout() {
     method: 'post',
     headers: { 'Content-Type': 'application/json' }
   });
-
   if (response.ok) {
     document.location.replace('/');
   } else {
